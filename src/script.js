@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const rollButton = document.getElementById("rollButton");
     const dice = document.getElementById("dice");
-    const toastContainer = document.getElementById("toastContainer");
 
     rollButton.addEventListener("click", function () {
         // Add rolling class to disable button during rolling
         rollButton.classList.add("rolling");
-        rollButton.setAttribute("aria-pressed", "true");
 
         // Generate a random number between 1 and 6 for the dice roll result
         const result = Math.floor(Math.random() * 6) + 1;
@@ -35,26 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
             dice.style.transition = "transform 0.5s ease-out";
             dice.style.transform = `rotateX(${finalX}deg) rotateY(${finalY}deg)`;
 
-            // Update dice aria-label to reflect the result
-            dice.setAttribute("aria-label", `Dice showing ${result}`);
-
-            // Create and append toast notification
             const toast = document.createElement("div");
             toast.classList.add("toast");
             toast.textContent = `You got ${result}!`;
-            toast.setAttribute("role", "alert");
-            toastContainer.appendChild(toast);
+            document.body.appendChild(toast);
 
             // Remove rolling class to enable button after the animation ends
             setTimeout(() => {
                 rollButton.classList.remove("rolling");
-                rollButton.setAttribute("aria-pressed", "false");
             }, 700);
 
-            // Remove the toast after the animation ends
+            // Remove the toast after the animation ends (1s fade-in + 1s fade-out)
             setTimeout(() => {
                 toast.remove();
-            }, 3000);
+            }, 3000); // The toast should disappear 3 seconds after it is shown
 
         }, 1500); // Duration of the initial dice rolling animation
     });
