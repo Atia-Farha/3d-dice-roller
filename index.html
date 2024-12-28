@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <script src="./src/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="dice-container" aria-labelledby="diceLabel">
-        <div class="dice" id="dice" role="img" aria-label="Dice showing face">
-            <div class="face front" aria-hidden="true">1</div>
-            <div class="face back" aria-hidden="true">2</div>
-            <div class="face right" aria-hidden="true">3</div>
-            <div class="face left" aria-hidden="true">4</div>
-            <div class="face top" aria-hidden="true">6</div>
-            <div class="face bottom" aria-hidden="true">5</div>
+    <div class="dice-container">
+        <div class="dice" id="dice">
+            <div class="face front">1</div>
+            <div class="face back">2</div>
+            <div class="face right">3</div>
+            <div class="face left">4</div>
+            <div class="face top">6</div>
+            <div class="face bottom">5</div>
         </div>
     </div>
-    <button id="rollButton" aria-pressed="false" aria-describedby="rollButtonDescription">
-        <span class="back" aria-hidden="true"></span>
+    <button id="rollButton">
+        <span class="back"></span>
         <span class="front">Roll</span>
     </button>
 </body>
