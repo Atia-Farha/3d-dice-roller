@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: #f0f4f8;
+    background-color: #ffebf0;
     color: #333;
 }
 
@@ -37,8 +37,7 @@ body {
     position: absolute;
     width: 120px;
     height: 120px;
-    background: #f7d7e1;
-    /* ffebf0 */
+    background-color: #f7d7e1;
     display: flex;
     justify-content: center;
     align-items: center;
