@@ -46,7 +46,8 @@ Currency-Converter/       # Root directory
 > Ensure that you already have an installed web browser (Chrome, Firefox, etc.) on your device.
 
 ## Keyboard Shortcut
-- Use Spacebar for a hands-free experience to roll the dice.
+
+Use `Spacebar` for a hands-free experience to roll the dice.
 
 ## Reporting Issues
 
