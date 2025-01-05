@@ -53,4 +53,5 @@ Use `Spacebar` for a hands-free experience to roll the dice.
 
 If you encounter any bugs or have suggestions for improvement, please report them in the <a href="https://github.com/Atia-Farha/3d-dice-roller/issues" target="_blank">Issues</a> section of this GitHub repository. I will address them promptly.
 
+---
 <p align="center">© Designed and developed by <a href="https://github.com/Atia-Farha" target="_blank">Atia Farha</a> | ALL RIGHTS RESERVED</p>
